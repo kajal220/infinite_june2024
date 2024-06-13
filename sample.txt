@@ -1,1 +1,2 @@
 this is sample for understanding git operations.
+this is our training sessions.
