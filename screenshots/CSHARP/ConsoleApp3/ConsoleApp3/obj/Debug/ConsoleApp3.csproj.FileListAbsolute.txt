@@ -1,0 +1,7 @@
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Batch_june2024\CSHARP\ConsoleApp3\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
