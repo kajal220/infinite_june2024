@@ -1,0 +1,7 @@
+C:\Batch_june2024\CSHARP\program7\program7\bin\Debug\program7.exe.config
+C:\Batch_june2024\CSHARP\program7\program7\bin\Debug\program7.exe
+C:\Batch_june2024\CSHARP\program7\program7\bin\Debug\program7.pdb
+C:\Batch_june2024\CSHARP\program7\program7\obj\Debug\program7.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\program7\program7\obj\Debug\program7.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\program7\program7\obj\Debug\program7.exe
+C:\Batch_june2024\CSHARP\program7\program7\obj\Debug\program7.pdb

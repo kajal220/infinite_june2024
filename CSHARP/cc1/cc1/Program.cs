@@ -11,6 +11,9 @@ namespace cc1
     {
         static void Main()
         {
+           
+            
+            
             Console.WriteLine("Enter a string:");
             string str = Console.ReadLine();
 

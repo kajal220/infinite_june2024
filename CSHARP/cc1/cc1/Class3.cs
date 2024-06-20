@@ -8,7 +8,7 @@ namespace cc1
 {
     class Class3
     {
-        static void main(String[] args)
+        static void Remove()
         {
             Console.WriteLine("enter the integers");
             String input = Console.ReadLine();

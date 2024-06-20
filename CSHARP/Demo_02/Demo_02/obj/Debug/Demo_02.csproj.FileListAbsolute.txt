@@ -1,0 +1,7 @@
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\bin\Debug\Demo_02.exe.config
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\bin\Debug\Demo_02.exe
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\bin\Debug\Demo_02.pdb
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\obj\Debug\Demo_02.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\obj\Debug\Demo_02.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\obj\Debug\Demo_02.exe
+C:\Batch_june2024\CSHARP\Demo_02\Demo_02\obj\Debug\Demo_02.pdb
