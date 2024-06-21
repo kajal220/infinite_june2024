@@ -10,7 +10,7 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            
+           //startup 
             Negative_or_positive.Check();
             Greater_than_less_than.Test();
             Console.Read();
