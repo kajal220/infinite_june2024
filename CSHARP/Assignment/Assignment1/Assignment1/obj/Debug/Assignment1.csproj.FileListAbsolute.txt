@@ -5,3 +5,10 @@ C:\Batch_june2024\CSHARP\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.As
 C:\Batch_june2024\CSHARP\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
 C:\Batch_june2024\CSHARP\Assignment1\Assignment1\obj\Debug\Assignment1.exe
 C:\Batch_june2024\CSHARP\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\bin\Debug\Assignment1.exe.config
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\bin\Debug\Assignment1.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\bin\Debug\Assignment1.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\obj\Debug\Assignment1.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment1\Assignment1\obj\Debug\Assignment1.pdb
