@@ -12,12 +12,12 @@ namespace Assignment_02
             {
                 Program.Summation();
                 Program.f1();
-                Program.Marks();
-                Program.Array_1();
-                Program.Length_of_word();
-                Program.Reverse_word();
-                Program.Check_Word();
-                Program.Days_week();
+               // Program.Marks();
+                //Program.Array_1();
+                //Program.Length_of_word();
+                //Program.Reverse_word();
+                //Program.Check_Word();
+               // Program.Days_week();
                 Console.Read();
             }
         
