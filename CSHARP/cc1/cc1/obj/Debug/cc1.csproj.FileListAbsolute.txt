@@ -1,7 +1,0 @@
-C:\Batch_june2024\CSHARP\cc1\cc1\bin\Debug\cc1.exe.config
-C:\Batch_june2024\CSHARP\cc1\cc1\bin\Debug\cc1.exe
-C:\Batch_june2024\CSHARP\cc1\cc1\bin\Debug\cc1.pdb
-C:\Batch_june2024\CSHARP\cc1\cc1\obj\Debug\cc1.csproj.AssemblyReference.cache
-C:\Batch_june2024\CSHARP\cc1\cc1\obj\Debug\cc1.csproj.CoreCompileInputs.cache
-C:\Batch_june2024\CSHARP\cc1\cc1\obj\Debug\cc1.exe
-C:\Batch_june2024\CSHARP\cc1\cc1\obj\Debug\cc1.pdb

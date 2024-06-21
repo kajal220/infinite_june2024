@@ -1,7 +1,0 @@
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\obj\Debug\day4_enum.csproj.AssemblyReference.cache
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\obj\Debug\day4_enum.csproj.CoreCompileInputs.cache
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\bin\Debug\day4_enum.exe.config
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\bin\Debug\day4_enum.exe
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\bin\Debug\day4_enum.pdb
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\obj\Debug\day4_enum.exe
-C:\Batch_june2024\CSHARP\day4_enum\day4_enum\obj\Debug\day4_enum.pdb
