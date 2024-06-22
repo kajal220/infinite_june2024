@@ -5,10 +5,10 @@ class Program
     static void Main()
 
     {
-        //Program.index_removing();
-        //Program.exchange_of_string();
+        Program.index_removing();
+        Program.exchange_of_string();
         Program.largest_number();
-        //Program.Multiplication();
+        Program.Multiplication();
 
         Console.Read();
 

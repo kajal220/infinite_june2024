@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EB56B3BE-4DF9-417F-A37F-1ECD1DA9FA5C}</ProjectGuid>
+    <ProjectGuid>{D9D53D1F-CB69-48C4-A27C-365609E7253B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CC_01</RootNamespace>
-    <AssemblyName>CC_01</AssemblyName>
+    <RootNamespace>CC1</RootNamespace>
+    <AssemblyName>CC1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
