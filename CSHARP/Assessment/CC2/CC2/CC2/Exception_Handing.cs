@@ -10,36 +10,33 @@ namespace CC2
     {
         public static void exception()
         {
+
             try
             {
-                Console.WriteLine("Enter a positive integer:");
-                int n1 = int.Parse(Console.ReadLine());
+                Console.Write("Enter an integer :");
+                int number = int.Parse(Console.ReadLine());
 
+                if (number < 0)
+                {
+                    throw new ArgumentException("Number cannot be negative.");
+                }
+
+                Console.WriteLine($"Entered number: {number}");
             }
-
-            catch (Exception e)
+            catch (ArgumentException ex)
             {
-                Console.WriteLine($"Unexpected error: {e.Message}");
+                Console.WriteLine($"Error: {ex.Message}");
             }
-
-        }
-
-        static int ReadPositiveInteger()
-        {
-
-            int number = int.Parse(Console.ReadLine());
-
-            if (number < 0)
+            catch (FormatException ex)
             {
-                throw new ArgumentException("number cannot be negative.");
+                Console.WriteLine($"Error: {ex.Message}. Please enter a valid Number.");
             }
-
-            return number;
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected error: {ex.Message}");
+            }
         }
-
-
-
     }
-
 }
-   
+
+
