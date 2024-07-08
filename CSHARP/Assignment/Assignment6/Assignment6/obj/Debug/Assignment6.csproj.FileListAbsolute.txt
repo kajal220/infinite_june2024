@@ -1,0 +1,7 @@
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\bin\Debug\Assignment6.exe.config
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\bin\Debug\Assignment6.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\bin\Debug\Assignment6.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\obj\Debug\Assignment6.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\obj\Debug\Assignment6.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\obj\Debug\Assignment6.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\obj\Debug\Assignment6.pdb

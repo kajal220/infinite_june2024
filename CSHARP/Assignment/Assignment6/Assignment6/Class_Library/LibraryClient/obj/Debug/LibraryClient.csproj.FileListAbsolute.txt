@@ -1,0 +1,10 @@
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\bin\Debug\LibraryClient.exe.config
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\bin\Debug\LibraryClient.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\bin\Debug\LibraryClient.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\bin\Debug\Class_Library.dll
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\bin\Debug\Class_Library.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\obj\Debug\LibraryClient.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\obj\Debug\LibraryClient.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\obj\Debug\LibraryClient.csproj.CopyComplete
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\obj\Debug\LibraryClient.exe
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\LibraryClient\obj\Debug\LibraryClient.pdb

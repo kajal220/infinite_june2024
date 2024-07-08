@@ -1,0 +1,6 @@
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\bin\Debug\Class_Library.dll
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\bin\Debug\Class_Library.pdb
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\obj\Debug\Class_Library.csproj.AssemblyReference.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\obj\Debug\Class_Library.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\obj\Debug\Class_Library.dll
+C:\Batch_june2024\CSHARP\Assignment\Assignment6\Assignment6\Class_Library\Class_Library\obj\Debug\Class_Library.pdb
