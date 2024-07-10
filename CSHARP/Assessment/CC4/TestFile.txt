@@ -7,3 +7,6 @@ This is my text file for Core Challenge 4.
 This is my text file for Core Challenge 4.
 This is my text file for Core Challenge 4.
 This is my text file for Core Challenge 4.
+[2024-07-10 11:18:10] This is my core challenge 4
+[2024-07-10 11:18:39] This is my core challenge 4.
+[2024-07-10 11:18:59] This is my core challenge 4.
