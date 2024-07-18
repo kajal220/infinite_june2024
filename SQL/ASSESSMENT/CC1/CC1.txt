@@ -25,30 +25,34 @@ select*from EMP
  --c.Delete first row.
  --After completing above all actions how to recall the deleted row without losing increment of second row.
 
-create table Employee (
-    empno int primary key,
-    ename varchar(50),
-    sal float,
-    doj Date
-)
+Create Table Employee (
+            EmpNo int PRIMARY KEY,
+            EName varchar(50),
+            Sal float,
+            DOJ DATE )
+			
+     Begin transaction
+	 --a. First insert 3 rows
+         Insert into Employee Values (101, 'kajal', 30000, '2022-04-09'), (102, 'palak', 50000, '2021-06-06'),
+       (103, 'abcd', 20000, '2020-08-03')
 
-begin transaction
---a.inserting 3 rows
-insert into  Employee (empno, ename, sal, doj) values
-(101, 'kajal shukla', 45000, '2024-07-01'),(102, 'abcd', 70000, '2026-09-17'),
-(103, 'palak', 70000, '2026-07-09')
+        -- b. Update the second row sal with 15% increment
+         Update Employee Set Sal = Sal * 1.15
+         where Empno = 102
+        
+         save tran t1
 
- --b. Update the second row salary with 15% increment
-update Employee set sal = sal * 1.15
-where empno = 102
+        -- c. Delete first row
+         Delete From Employee 
+         where empno = 101
+         
+        --Recalling the deleted row without loosing increment of second row
+         rollback tran t1
 
---c.Delete the first row
- delete from Employee where empno = 101
-  
- commit
- 
--- Retrieve the deleted row
-select * from Employee
+         Commit
+
+	 Select * from  employee
+
 
  
 --5. Create a user defined function calculate Bonus for all employees of a  given job using 	following conditions
@@ -73,4 +77,4 @@ select empno, ename, sal, hiredate, dbo.Calculate_Bonus(sal, deptno) as Bonus
 from EMP
 where deptno = 10
 
-
+ 
