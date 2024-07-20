@@ -31,6 +31,7 @@ Create Table Employee (
             Sal float,
             DOJ DATE )
 			
+			
      Begin transaction
 	 --a. First insert 3 rows
          Insert into Employee Values (101, 'kajal', 30000, '2022-04-09'), (102, 'palak', 50000, '2021-06-06'),
@@ -45,6 +46,8 @@ Create Table Employee (
         -- c. Delete first row
          Delete From Employee 
          where empno = 101
+
+	
          
         --Recalling the deleted row without loosing increment of second row
          rollback tran t1
