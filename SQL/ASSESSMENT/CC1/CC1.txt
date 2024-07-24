@@ -15,7 +15,7 @@ select*from EMP
 		update EMP set HireDate = '2019-07-3' where Empno = 7782
 		update EMP set HireDate = '2019-07-9' where Empno = 7698
  
-	select * from EMP where DATEDIFF(yy,hiredate,GETDATE()) = 5 and month(hiredate)=month(getdate());
+	select * from EMP where DATEDIFF(yy,hiredate,GETDATE()) >= 5 and month(hiredate)=month(getdate());
 
 
 
