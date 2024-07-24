@@ -1,0 +1,36 @@
+
+--1. creating a database
+create database Employeemanagement
+
+use Employeemanagement
+
+--2 creating table Employee_Details
+  create table Employee_Details(
+  Empno int primary key,
+  Empname varchar(50)  not null,
+  Empsal numeric(10,2) check (Empsal >= 25000),
+  Emptype char(1) check (Emptype in('F', 'P')));
+
+  select * from Employee_Details
+
+  --1.Create a stored procedure that adds new rows to the Employee_Details Table.
+  --The procedure should accept all the details as input except empno.
+  --You need to write the code in the procedure to generate the empno and then insert
+    
+	create or alter procedure Empdetails(
+	@Empname varchar(50),
+	@Empsal numeric(10,2),
+	@Emptype char(1))
+	as 
+	begin
+	declare @Empno int;
+	select @Empno = COALESCE(MAX(Empno), 0) + 1 from Employee_Details
+	insert into Employee_Details(Empno,Empname, Empsal, Emptype)
+	values(@Empno, @Empname,@Empsal,@Emptype);
+	 print 'new employee' + @Empname + 'with employee number' + Cast(@Empno as varchar(10)) + 'has been added with salary'
+	 + cast(@Empsal as varchar(10))+ 'and type '+ @Emptype
+	end
+
+	--2. Check the procedure
+	exec Empdetails 'Kajal', 40000, 'F'
+	exec Empdetails 'Anchal', 60000, 'P'
