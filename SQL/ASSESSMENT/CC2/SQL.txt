@@ -17,13 +17,19 @@ use Employeemanagement
   --The procedure should accept all the details as input except empno.
   --You need to write the code in the procedure to generate the empno and then insert
     
-create or alter procedure Empdetails( @Empname varchar(50), @Empsal numeric(10,2),
- 
-@Emptype char(1))
+create or alter procedure Empdetails( 
+@Empname varchar(50), 
+@Empsal numeric(10,2),
+ @Emptype char(1))
  as
  begin
  declare @Empno int;
- select @Empno COALESCE(MAX(Empno), 0)+ 1 from Employee_Details
+ select @Empno = case
+	   when max(Empno) is null then 0
+	   else max(Empno)
+	   end
+	   from Employee_Details
+	    set @Empno = @Empno + 1
  insert into Employee Details (Empno, Empname, Empsal, Emptype)
  values (@Empno, @Empname, @Empsal,@Emptype);
  print new employee @Empname with employee number + Cast (@Empno as varchar(10)) + 'has been added with salary
