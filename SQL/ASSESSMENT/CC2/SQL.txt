@@ -31,6 +31,8 @@ Begin
   set @gen_emp_no = @gen_emp_no + 1
 
   Insert into Employee_Details Values (@gen_emp_no, @emp_name, @emp_sal, @emp_type)
+  print new employee @Empname with employee number + Cast (@Empno as varchar(10)) + 'has been added with salary
+  +cast(@Empsal as varchar(10)) and type @Emptype
 End
 
 	--2. Check the procedure
