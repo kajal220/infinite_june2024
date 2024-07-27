@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.35026.282
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_SQL_Assignment", "LINQ_SQL_Assignment\LINQ_SQL_Assignment.csproj", "{42A3C8A7-E64D-4325-B51F-4A889772322C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42A3C8A7-E64D-4325-B51F-4A889772322C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A3C8A7-E64D-4325-B51F-4A889772322C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A3C8A7-E64D-4325-B51F-4A889772322C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A3C8A7-E64D-4325-B51F-4A889772322C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D335C24F-7B53-4E2D-ACF6-66FFC82E1739}
+	EndGlobalSection
+EndGlobal

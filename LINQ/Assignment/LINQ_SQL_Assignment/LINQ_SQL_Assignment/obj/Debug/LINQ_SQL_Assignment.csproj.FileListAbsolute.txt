@@ -1,0 +1,7 @@
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\bin\Debug\LINQ_SQL_Assignment.exe.config
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\bin\Debug\LINQ_SQL_Assignment.exe
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\bin\Debug\LINQ_SQL_Assignment.pdb
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\obj\Debug\LINQ_SQL_Assignment.csproj.AssemblyReference.cache
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\obj\Debug\LINQ_SQL_Assignment.csproj.CoreCompileInputs.cache
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\obj\Debug\LINQ_SQL_Assignment.exe
+C:\Batch_june2024\LINQ\LINQ_SQL_Assignment\LINQ_SQL_Assignment\obj\Debug\LINQ_SQL_Assignment.pdb
