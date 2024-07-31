@@ -58,7 +58,7 @@ having count (Distinct book_id)>1
 -------------------------------------------------------------------------------------------------
 
 
--- Create CUSTOMERS table
+-- Create CUSTOMERS table------
 create table customers (
     id int primary key,
     NAME VARCHAR(100),
@@ -66,7 +66,7 @@ create table customers (
     ADDRESS VARCHAR(100),
     SALARY DECIMAL(10, 2))
 
--- Insert data into CUSTOMERS table
+-- Insert data into CUSTOMERS table--------
 INSERT INTO CUSTOMERS (ID, NAME, AGE, ADDRESS, SALARY) VALUES
 (1, 'Ramesh', 32, 'Ahmedabad', 2000.00),
 (2, 'Khilan', 25, 'Delhi', 1500.00),
@@ -80,17 +80,17 @@ INSERT INTO CUSTOMERS (ID, NAME, AGE, ADDRESS, SALARY) VALUES
 select * from customers
 
  
--- Create ORDERS table
-CREATE TABLE ORDERS (
-    OID INT PRIMARY KEY,
-    DATE DATETIME,
-    CUSTOMER_ID INT,
-    AMOUNT DECIMAL(10, 2),
-    FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(ID)
+-- Create ORDERS table-----------------------------
+create table orders (
+    oid int primary key,
+    date DATETIME,
+    CUSTOMER_ID int,
+    amount decimal(10, 2),
+    foreign key(CUSTOMER_ID) references customers(id)
 )
  
 -- Insert data into ORDERS table
-INSERT INTO ORDERS (OID, DATE, CUSTOMER_ID, AMOUNT) VALUES
+insert into orders (oid, date, customer_id, amount) values
 (101, '2009-10-08 00:00:00', 1, 3000.00),
 (102, '2009-10-08 00:00:00', 2, 1560.00),
 (103, '2009-11-20 00:00:00', 3, 1500.00),
@@ -118,10 +118,10 @@ create table Employee (
     ID int primary key,
     name varchar(30),
     age int,
-    ADDRESS varchar(30),
-    SALARY decimal(10, 2))
+    address varchar(30),
+    salary decimal(10, 2))
  
-INSERT INTO Employee (ID, NAME, AGE, ADDRESS, SALARY) VALUES
+insert into Employee (ID, name, age, address, salary) values
 (1, 'Ramesh', 32, 'Ahmedabad', 2000.00),
 (2, 'Khilan', 25, 'Delhi', 1500.00),
 (3, 'Kaushik', 27, 'Kota', 2000.00),
@@ -137,17 +137,16 @@ where salary is null
 -----------------------------------------------------------------------------------
  
 CREATE TABLE Studentdetails (
-    RegisterNo INT PRIMARY KEY,
-    Name VARCHAR(30),
-    Age INT,
-    Qualification VARCHAR(30),
-    MobileNo VARCHAR(15),
-    Mail_id VARCHAR(30),
-    Location VARCHAR(30),
-    Gender CHAR(1))
+    RegisterNo int primary key,
+    Name varchar(30),
+    Age int,
+    Qualification varchar(30),
+    MobileNo varchar(15),
+    Mail_id varchar(30),
+    Location varchar(30),
+    Gender char(1))
  
-
-INSERT INTO Studentdetails (RegisterNo, Name, Age, Qualification, MobileNo, Mail_id, Location, Gender) VALUES
+insert into Studentdetails (RegisterNo, Name, Age, Qualification, MobileNo, Mail_id, Location, Gender) values
 (1, 'Sai', 22, 'B.E', '9952836777', 'Sai@gmail.com', 'Chennai', 'M'),
 (2, 'Kumar', 20, 'BSC', '7890125648', 'Kumar@gmail.com', 'Madurai', 'M'),
 (3, 'Selvi', 22, 'B.Tech', '8904567342', 'selvi@gmail.com', 'Selam', 'F'),
