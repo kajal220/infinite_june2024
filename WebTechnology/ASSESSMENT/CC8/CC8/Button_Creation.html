@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">click me!</button>
+    <div id="message"></div>
+
+    <script>
+        function handleClick() {
+            document.getElementById("message").innerText = "Thankyou for using the button!";
+        }
+
+        document.getElementById("myButton").addEventListener("click", handleClick);
+    </script>
+</body>
+</html>
