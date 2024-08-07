@@ -44,7 +44,7 @@
                         result = number1 * number2;
                         break;
                     case 'divide':
-                        result =  number1 / number2;
+                        result = number2 === 0 ? "Cannot divide by zero." : number1 / number2;
                         break;
                   
                     default:
