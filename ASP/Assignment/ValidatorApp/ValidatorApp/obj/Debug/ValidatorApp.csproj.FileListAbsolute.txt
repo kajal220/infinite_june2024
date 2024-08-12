@@ -56,3 +56,4 @@ C:\Batch_june2024\ASP\Assignment\ValidatorApp\ValidatorApp\obj\Debug\ValidatorAp
 C:\Batch_june2024\ASP\Assignment\ValidatorApp\ValidatorApp\obj\Debug\ValidatorApp.csproj.CopyComplete
 C:\Batch_june2024\ASP\Assignment\ValidatorApp\ValidatorApp\obj\Debug\ValidatorApp.dll
 C:\Batch_june2024\ASP\Assignment\ValidatorApp\ValidatorApp\obj\Debug\ValidatorApp.pdb
+C:\Batch_june2024\ASP\Assignment\ValidatorApp\ValidatorApp\obj\Debug\ValidatorApp.csproj.AssemblyReference.cache

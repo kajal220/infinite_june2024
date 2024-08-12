@@ -17,18 +17,26 @@ namespace ValidatorApp
         {
             if (Page.IsValid)
             {
-                string name = txtName.Text;
-                string familyName = txtFamilyName.Text;
-                string address = txtAddress.Text;
-                string city = txtCity.Text;
-                string zipCode = txtZipCode.Text;
-                string phone = txtPhone.Text;
-                string email = txtEmail.Text;
+                // If the page is valid, you can process the form data here
+                string name = TextName.Text;
+                string familyName = TextFName.Text;
+                string address = TextAddr.Text;
+                string city = TextCity.Text;
+                string zipCode = TextZip.Text;
+                string phone = TextPhone.Text;
+                string email = TextEmail.Text;
 
-                Response.Write($"<p>Details submitted:<br>Name: {name}<br>Family Name: {familyName}<br>Address: {address}<br>City: {city}<br>Zip Code: {zipCode}<br>Phone: {phone}<br>Email: {email}</p>");
+                // For demonstration purposes, show a success message
+                // You can replace this with logic to save data or perform other actions
+                Response.Write("<script>alert('Validation successful!');</script>");
             }
-           
+            else
+            {
+                // If the page is not valid, the ValidationSummary will display the errors
+                Response.Write("<script>alert('Validation failed! Please correct the errors and try again.');</script>");
+            }
         }
     }
-   
 }
+   
+

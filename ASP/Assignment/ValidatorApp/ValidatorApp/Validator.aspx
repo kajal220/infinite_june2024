@@ -4,88 +4,76 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title>Validator</title>
-    <style>
-        .error-label {
-            color: red;
+   <title>Validator Example</title>
+    <style type="text/css">
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
         }
-        .input-label {
-            width: 150px;
-            display: inline-block;
-        }
-        .text-box {
-            width: 200px;
+        .form-title {
+            text-align: center;
+            color: blue;
+            font-size: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <h3>Insert your details:</h3>
-            <table>
-                <tr>
-                    <td class="input-label">Name:</td>
-                    <td>
-                        <asp:TextBox ID="txtName" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvName" runat="server" ControlToValidate="txtName" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">Family Name:</td>
-                    <td>
-                        <asp:TextBox ID="txtFamilyName" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvFamilyName" runat="server" ControlToValidate="txtFamilyName" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:CompareValidator ID="cvFamilyName" runat="server" ControlToValidate="txtFamilyName" ControlToCompare="txtName" Operator="NotEqual" ErrorMessage="differs from name" CssClass="error-label" Display="Static"></asp:CompareValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">Address:</td>
-                    <td>
-                        <asp:TextBox ID="txtAddress" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvAddress" runat="server" ControlToValidate="txtAddress" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revAddress" runat="server" ControlToValidate="txtAddress" ErrorMessage="at least 2 chars" CssClass="error-label" ValidationExpression=".{2,}" Display="Static"></asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">City:</td>
-                    <td>
-                        <asp:TextBox ID="txtCity" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvCity" runat="server" ControlToValidate="txtCity" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revCity" runat="server" ControlToValidate="txtCity" ErrorMessage="at least 2 chars" CssClass="error-label" ValidationExpression=".{2,}" Display="Static"></asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">Zip Code:</td>
-                    <td>
-                        <asp:TextBox ID="txtZipCode" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvZipCode" runat="server" ControlToValidate="txtZipCode" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revZipCode" runat="server" ControlToValidate="txtZipCode" ErrorMessage="valid range is 1000-999999" CssClass="error-label" ValidationExpression="^[1-9][0-9]{3,5}$" Display="Static"></asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">Phone:</td>
-                    <td>
-                        <asp:TextBox ID="txtPhone" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="(xxx-xxxxxxx)" CssClass="error-label" ValidationExpression="^(\(\d{3}\)\s\d{3}-\d{4}|\d{3}-\d{7})$" Display="Static"></asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="input-label">E-Mail:</td>
-                    <td>
-                        <asp:TextBox ID="txtEmail" runat="server" CssClass="text-box"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="*" CssClass="error-label" Display="Static"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="example@example.com" CssClass="error-label" ValidationExpression="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" Display="Static"></asp:RegularExpressionValidator>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <asp:Button ID="btnCheck" runat="server" Text="Check" OnClick="btnCheck_Click" />
-                    </td>
-                </tr>
-            </table>
+        <div style="height: 778px">
+            Insert Your Details:<br />
             <br />
-            <asp:ValidationSummary ID="vsSummary" runat="server" CssClass="error-label" HeaderText="Validation Summary:" ShowMessageBox="true" ShowSummary="false" />
+            Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextName" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Name" ControlToValidate="TextName" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <br />
+            Family Name:&nbsp;&nbsp; <asp:TextBox ID="TextFName" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextFName" ErrorMessage="Family" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextName" ControlToValidate="TextFName" ErrorMessage="differs from name" ForeColor="Black" SetFocusOnError="True">differs from name</asp:CompareValidator>
+&nbsp;<br />
+            <br />
+            Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextAddr" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextAddr" ErrorMessage="address" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextAddr" ErrorMessage="at least 2 chars" ForeColor="Black" MaximumValue="Max" MinimumValue="2">at least 2 chars</asp:RangeValidator>
+&nbsp;<br />
+            <br />
+            City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextCity" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextCity" ErrorMessage="City" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="TextCity" ErrorMessage="at least 2 chars" ForeColor="Black" MaximumValue="Max" MinimumValue="2">at least 2 chars</asp:RangeValidator>
+&nbsp;<br />
+            <br />
+            Zip Code:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextZip" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextZip" ErrorMessage="Zip Code" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextZip" ErrorMessage="(xxxxx)" ForeColor="Black" ValidationExpression="^\d{5}$">(xxxxx)</asp:RegularExpressionValidator>
+            <br />
+            <br />
+            Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextPhone" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextPhone" ErrorMessage="Phone" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextPhone" ErrorMessage="(xx-xxxxxxx/xxx-xxxxxxx)" ForeColor="Black" ValidationExpression="^\d{2,3}-\d{7}$">(xx-xxxxxxx/xxx-xxxxxxx)</asp:RegularExpressionValidator>
+            <br />
+            <br />
+            E-Mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="TextEmail" runat="server"></asp:TextBox>
+        &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextEmail" ErrorMessage="E-Mail" ForeColor="Red">*</asp:RequiredFieldValidator>
+&nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TextEmail" ErrorMessage="example@example.com" ForeColor="Black" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">example@example.com</asp:RegularExpressionValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="BtnCheck" runat="server" Text="Check" />
+            <br />
+            <br />
+            <br />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" HeaderText="ValidationSum" ShowMessageBox="True" />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>

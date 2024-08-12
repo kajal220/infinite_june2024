@@ -56,3 +56,4 @@ C:\Batch_june2024\ASP\Assignment\ProductValidation\ProductValidation\bin\Microso
 C:\Batch_june2024\ASP\Assignment\ProductValidation\ProductValidation\obj\Debug\ProductValidation.csproj.CopyComplete
 C:\Batch_june2024\ASP\Assignment\ProductValidation\ProductValidation\obj\Debug\ProductValidation.dll
 C:\Batch_june2024\ASP\Assignment\ProductValidation\ProductValidation\obj\Debug\ProductValidation.pdb
+C:\Batch_june2024\ASP\Assignment\ProductValidation\ProductValidation\obj\Debug\ProductValidation.csproj.AssemblyReference.cache

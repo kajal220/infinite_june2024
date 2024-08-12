@@ -106,7 +106,7 @@ namespace ProductValidation
 
         private bool IsValidPhoneNumber(string phone)
         {
-            // Validate phone number formats: XX-XXXXXXX or XXX-XXXXXXX
+            // Validate phone number formats
             if ((phone.Length == 10 && phone[2] == '-' && IsDigitsOnly(phone.Substring(0, 2)) && IsDigitsOnly(phone.Substring(3))) ||
                 (phone.Length == 12 && phone[3] == '-' && IsDigitsOnly(phone.Substring(0, 3)) && IsDigitsOnly(phone.Substring(4))))
             {
@@ -117,7 +117,6 @@ namespace ProductValidation
 
         private bool IsValidEmail(string email)
         {
-            // Simple email validation: Check if it contains "@" and "."
             int atIndex = email.IndexOf('@');
             int dotIndex = email.LastIndexOf('.');
 
