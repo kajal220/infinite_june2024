@@ -1,59 +1,54 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using Code_First_MVC.Models;
+using System.Data.Entity;
 
 
 namespace Code_First_MVC.Repository
 {
-    public class MovieRepository : IMovieRepository
+    public class MovieRepository<T> : IMovieRepository<T> where T : class
     {
-        private MoviesDbContext context;
-
-        public MovieRepository(MoviesDbContext context)
+        MoviesContext db;
+        DbSet<T> dbset;
+        public MovieRepository()
         {
-            this.context = context;
+            db = new MoviesContext();
+            dbset = db.Set<T>();
+        }
+        public IEnumerable<T> GetAll()
+        {
+            return dbset.ToList();
         }
 
-        public IEnumerable<Movie> GetAllMovies()
+        public T GetById(object Id)
         {
-            return context.Movies.ToList();
+            return dbset.Find(Id);
         }
 
-        public Movie GetMovieById(int id)
+        public IEnumerable<T> GetMoviesByYear(int year)
         {
-            return context.Movies.Find(id);
+            return dbset.ToList();
+        }
+        public void Insert(T obj)
+        {
+            dbset.Add(obj);
+        }
+        public void Update(T obj)
+        {
+            db.Entry(obj).State = EntityState.Modified;
         }
 
-        public void InsertMovie(Movie movie)
+        public void Delete(object Id)
         {
-            context.Movies.Add(movie);
-        }
-
-        public void UpdateMovie(Movie movie)
-        {
-            context.Entry(movie).State = EntityState.Modified;
-        }
-
-        public void DeleteMovie(int id)
-        {
-            Movie movie = context.Movies.Find(id);
-            if (movie != null)
-            {
-                context.Movies.Remove(movie);
-            }
+            T getmodel = dbset.Find(Id);     
+            dbset.Remove(getmodel);
         }
 
         public void Save()
         {
-            context.SaveChanges();
-        }
-
-        public void Dispose()
-        {
-            context.Dispose();
+            db.SaveChanges();
         }
     }
 }
