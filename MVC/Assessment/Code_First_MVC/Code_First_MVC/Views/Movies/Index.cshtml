@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Code_First_MVC.Models.Movie>
+ 
+<h2>Movies</h2>
+ 
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+ 
+<table class="table">
+    <thead>
+        <tr>
+            <th>Movie Name</th>
+            <th>Date of Release</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.MovieName)</td>
+                <td>@Html.DisplayFor(modelItem => item.DateOfRelease)</td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Mid }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Mid })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
