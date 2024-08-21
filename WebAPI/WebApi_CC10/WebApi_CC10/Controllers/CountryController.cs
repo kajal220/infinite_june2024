@@ -51,10 +51,10 @@ namespace WebApi_CC10.Controllers
                 return countryList;
             }
 
-        // PUT: api/Country?pid=1
+        // PUT: updateCountry?pid=3
         [HttpPut]
         [Route("updateCountry")]
-        public IEnumerable<Country> UpdateCountry(int pid, [FromUri] Country updatedCountry)
+        public IEnumerable<Country> UpdateCountry(int pid, [FromBody] Country updatedCountry)
         {
             var existingCountry = countryList.FirstOrDefault(c => c.id == pid);
             if (existingCountry != null)
